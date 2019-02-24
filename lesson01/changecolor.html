@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+    <title>Props and setState</title>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+
+    <div id="target"></div>
+
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 40px;
+      }
+    </style>
+
+    <script>
+      class ChangeColor extends React.Component {
+        constructor(props) {
+          super(props);
+
+          this.state = { color: 'red' };
+
+          this.toggleColor = this.toggleColor.bind(this);
+        }
+
+        toggleColor() {
+          const color = this.state.color;
+          this.setState({ color: color === 'red' ? 'green' : 'red' });
+        }
+
+        render() {
+          return React.createElement('p', {
+            style: {
+              color: this.state.color,
+              cursor: 'pointer',
+            },
+            onClick: this.toggleColor,
+          }, 'Hello world!');
+        }
+      }
+
+      ReactDOM.render(
+        React.createElement(ChangeColor),
+        document.getElementById('target'),
+      );
+    </script>
+    
+  </head>
+</html>
