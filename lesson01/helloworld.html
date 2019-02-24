@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+    <title>Hello World in React</title>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+
+    <div id="target"></div>
+
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 40px;
+      }
+    </style>
+
+    <script>
+      class HelloWorld extends React.Component {
+        render() {
+          return React.createElement('p', {}, 'Hello world!');
+        }
+      }
+
+      ReactDOM.render(
+        React.createElement(HelloWorld),
+        document.getElementById('target'),
+      );
+    </script>
+    
+  </head>
+</html>
