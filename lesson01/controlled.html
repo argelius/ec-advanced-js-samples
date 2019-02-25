@@ -47,7 +47,7 @@
             htmlFor: 'check',
           }, checked ? 'Checkbox is checked' : 'Checkbox is unchecked');
 
-          return React.createElement('div', {}, checkbox, label);
+          return React.createElement(React.Fragment, {}, checkbox, label);
         }
       }
 
