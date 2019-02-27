@@ -1,0 +1,14 @@
+.List {
+  display: inline-block;
+  list-style-type: circle;
+}
+
+.ListItem {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 30px;
+  font-family: Helvetica, sans-serif;
+}
+
+.ListItem:hover {
+  background-color: red;
+}
