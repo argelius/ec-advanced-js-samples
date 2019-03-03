@@ -16,6 +16,10 @@ class Counter extends Component {
     this.interval = setInterval(() => this.increase(), 1000);
   }
 
+  componentWillUnmount() {
+    clearInterval(this.interval);
+  }
+
   render() {
     return <p>{this.state.counter}</p>
   }
