@@ -1,0 +1,24 @@
+.Carousel {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.Carousel__images {
+  transition: transform 0.4s ease-out;
+}
+
+.Carousel__image {
+}
+
+.Carousel__controls {
+  display: flex;
+  justify-content: center;
+}
+
+.Carousel__button {
+  border: none;
+  background-color: transparent;
+  font-size: 30px;
+  cursor: pointer;
+  margin: 0 5px;
+}
