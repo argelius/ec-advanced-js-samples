@@ -31,6 +31,10 @@ class Home extends Component {
   }
 
   render() {
+    if (this.state.beers.length === 0) {
+      return <p>Loading beers...</p>;
+    }
+
     return (
       <ul>
         {this.state.beers.map((beer) => (
