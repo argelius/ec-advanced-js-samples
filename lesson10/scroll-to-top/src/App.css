@@ -1,0 +1,8 @@
+.App {
+  font-size: 30px;
+}
+
+.App-inner {
+  max-width: 600px;
+  margin: 0 auto;
+}
