@@ -1,0 +1,19 @@
+.Toast {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.Toast-message {
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+  margin: 10px;
+  padding: 20px;
+  background-color: rgba(0, 255, 0, 0.4);
+}
