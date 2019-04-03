@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
 
+function easeCubic(t) {
+  return Math.max(0, Math.min(1.0, t))**3;
+}
+
 function scrollToTop(duration = 1000) {
   const el = document.scrollingElement;
   const initialScroll = el.scrollTop;
@@ -13,7 +17,9 @@ function scrollToTop(duration = 1000) {
 
     const progress = timestamp - start;
 
-    const newScrollTop = initialScroll - (progress / duration) * initialScroll;
+    const delta = easeCubic(progress / duration);
+
+    const newScrollTop = initialScroll - delta * initialScroll;
 
     el.scrollTop = newScrollTop;
 
@@ -48,8 +54,8 @@ class App extends Component {
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
-            
-            <button onClick={() => scrollToTop(400)}>Scroll to top</button>
+
+            <button onClick={() => scrollToTop(1000)}>Scroll to top</button>
           </div>
       </div>
     );
