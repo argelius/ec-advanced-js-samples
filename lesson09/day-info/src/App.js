@@ -53,7 +53,7 @@ class DayInfo extends PureComponent {
     this.fetchData();
   }
 
-  componetWillUnmount() {
+  componentWillUnmount() {
     this.source.cancel();
   }
 

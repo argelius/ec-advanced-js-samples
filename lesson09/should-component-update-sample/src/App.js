@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
 
 class Numbers extends Component {
-
   shouldComponentUpdate(nextProps) {
-    // return true;
-
     return nextProps.n !== this.props.n;
   }
 
@@ -22,6 +19,22 @@ class Numbers extends Component {
     );
   }
 }
+
+function Numbers2(props) {
+  console.log("render");
+
+  const numbers = Array(props.n)
+    .fill(null)
+    .map((_, idx) => idx);
+
+  return (
+    <>
+      {numbers.map(x => <span key={x}>{x} </span>)}
+    </>
+  );
+}
+
+const Numbers2Memo = React.memo(Numbers2);
 
 class App extends Component {
   constructor(props) {
@@ -47,7 +60,7 @@ class App extends Component {
         >
           Click me!
         </p>
-        <Numbers n={50000} />
+        <Numbers2Memo n={50000} />
       </>
     );
   }

@@ -1,19 +1,19 @@
-import React, { Component } from "react";
+import React, { Component, PureComponent } from "react";
 
-class Square extends Component {
+class Square extends PureComponent {
   constructor(props) {
     super(props);
 
     this.onClick = this.onClick.bind(this);
   }
 
-  shouldComponentUpdate(nextProps) {
+/*  shouldComponentUpdate(nextProps) {
     return (
       nextProps.color !== this.props.color ||
       nextProps.id !== this.props.id ||
       nextProps.onClick !== this.props.onClick
     );
-  }
+  }*/
 
   onClick() {
     this.props.onClick(this.props.id);
