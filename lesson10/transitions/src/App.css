@@ -1,0 +1,43 @@
+.App {
+}
+
+.App-list {
+  list-style: none;
+  margin: 10px 0;
+  padding: 0;
+}
+
+.App-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 5px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.App-delete-button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+.App-delete-button:hover {
+  color: red;
+}
+
+.App-item-enter {
+  opacity: 0;
+}
+.App-item-enter-active {
+  opacity: 1;
+  transition: all 500ms ease-in;
+}
+.App-item-exit {
+  opacity: 1;
+}
+.App-item-exit-active {
+  opacity: 0;
+  transition: all 500ms ease-in;
+}
