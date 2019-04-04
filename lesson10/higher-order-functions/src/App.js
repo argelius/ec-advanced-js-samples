@@ -36,7 +36,7 @@ class App extends Component {
     });*/
 
     this.setState(updatePerson(
-      'occupation',
+      'name',
       e.target.value,
     ));
   }
@@ -51,10 +51,7 @@ class App extends Component {
       },
     });*/
 
-    this.setState(updatePerson(
-      'occupation',
-      e.target.value,
-    ));
+    this.setState(updatePerson('occupation', e.target.value));
   }
 
   render() {
