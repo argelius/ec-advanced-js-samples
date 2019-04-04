@@ -24,7 +24,7 @@ class DayInfo extends PureComponent {
       data: null
     };
 
-    this.fetchData = this.fetchData.bind(this);
+    this.fetchData = debounce(this.fetchData.bind(this), 400);
   }
 
   fetchData() {
