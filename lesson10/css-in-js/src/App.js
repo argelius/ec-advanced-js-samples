@@ -22,7 +22,7 @@ const rule = css({
   }
 });
 
-const RetroButton = props => <button className={rule} {...props} />;
+const RetroButton = props => <button {...rule} {...props} />;
 
 class App extends Component {
   render() {

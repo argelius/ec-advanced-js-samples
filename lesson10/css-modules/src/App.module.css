@@ -31,3 +31,7 @@
     transform: rotate(360deg);
   }
 }
+
+.list > li:first-child {
+  color: red;
+}

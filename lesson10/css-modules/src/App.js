@@ -1,11 +1,16 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
+
 import styles from './App.module.css';
 
 class App extends Component {
   render() {
     return (
       <div className={styles.container}>
+        <ul className={styles.list}>
+          <li>A</li>
+          <li>B</li>
+        </ul>
         <header className={styles.header}>
           <img src={logo} className={styles.logo} alt="logo" />
           <p>
