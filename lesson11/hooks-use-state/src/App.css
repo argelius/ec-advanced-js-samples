@@ -1,0 +1,7 @@
+.App {
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
