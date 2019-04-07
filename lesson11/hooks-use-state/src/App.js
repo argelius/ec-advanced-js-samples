@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 import "./App.css";
 
 function App() {
-  const [ color, updateColor ] = useState('red');
-  const newColor = color === 'red' ? 'blue' : 'red';
+  const [color, updateColor] = useState("red");
+  const newColor = color === "red" ? "blue" : "red";
 
   return (
     <p
@@ -12,7 +12,7 @@ function App() {
       onClick={() => updateColor(newColor)}
       style={{
         color,
-        cursor: 'pointer',
+        cursor: "pointer"
       }}
     >
       Click me!
