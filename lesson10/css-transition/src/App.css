@@ -37,7 +37,7 @@
 .App-message-enter-active {
   opacity: 1;
   transform: scale(1.0);
-  transition: all 200ms;
+  transition: all 1s;
 }
 .App-message-exit {
   transform: scale(1.0);
@@ -46,5 +46,5 @@
 .App-message-exit-active {
   transform: scale(0.0);
   opacity: 0;
-  transition: all 200ms;
+  transition: all 1s;
 }

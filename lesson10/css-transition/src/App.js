@@ -3,6 +3,7 @@ import { CSSTransition } from 'react-transition-group';
 import './App.css';
 
 class App extends Component {
+
   state = { show: false };
 
   render() {
@@ -16,7 +17,7 @@ class App extends Component {
         <p>{ this.state.show ? 'show' : 'hide' }</p>
         <CSSTransition
           classNames="App-message"
-          timeout={200}
+          timeout={1000}
           unmountOnExit
           in={this.state.show}
         >
