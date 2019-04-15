@@ -1,0 +1,17 @@
+.App {
+}
+
+.App-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.App-label {
+  display: flex;
+}
+
+.App-label-name {
+  width: 60px;
+}
+
+

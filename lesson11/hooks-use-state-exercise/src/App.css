@@ -1,0 +1,8 @@
+.App {
+}
+
+.App-form {
+  display: flex;
+  flex-direction: column;
+  text-transform: capitalize;
+}
