@@ -32,12 +32,12 @@
 }
 .App-item-enter-active {
   opacity: 1;
-  transition: all 500ms ease-in;
+  transition: all 0.2s ease-in;
 }
 .App-item-exit {
   opacity: 1;
 }
 .App-item-exit-active {
   opacity: 0;
-  transition: all 500ms ease-in;
+  transition: all 0.2s ease-in;
 }

@@ -79,7 +79,7 @@ class App extends Component {
             <CSSTransition
               key={item.id}
               classNames="App-item"
-              timeout={500}
+              timeout={200}
             >
               <li className="App-list-item">
                 {item.value}
