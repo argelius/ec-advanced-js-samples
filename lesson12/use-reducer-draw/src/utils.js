@@ -1,4 +1,4 @@
-import { WIDTH, HEIGHT } from './constants';
+import { WIDTH, HEIGHT } from "./constants";
 
 export function createEmptyGrid() {
   return Array(WIDTH * HEIGHT).fill("white");
@@ -84,5 +84,3 @@ export function drawWithBrush(grid, color, size, idx) {
   }
   return rv;
 }
-
-

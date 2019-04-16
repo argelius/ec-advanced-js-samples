@@ -1,4 +1,4 @@
-import { floodFill, drawWithBrush, createEmptyGrid } from './utils';
+import { floodFill, drawWithBrush, createEmptyGrid } from "./utils";
 
 function reducer(state, action) {
   switch (action.type) {

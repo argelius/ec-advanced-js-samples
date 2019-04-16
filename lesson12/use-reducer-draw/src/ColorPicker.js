@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 function ColorPicker({ selectedColor, onSelectColor }) {
   const colors = [
@@ -55,7 +55,7 @@ const styles = {
     borderTop: "1px solid black",
     borderLeft: "1px solid black",
     cursor: "pointer"
-  },
+  }
 };
 
 export default ColorPicker;

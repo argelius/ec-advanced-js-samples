@@ -1,17 +1,17 @@
 import React, { useReducer } from "react";
 
-import Grid from './Grid';
-import ColorPicker from './ColorPicker';
-import { createEmptyGrid } from './utils';
-import reducer from './reducer';
-import * as actions from './actions';
+import Grid from "./Grid";
+import ColorPicker from "./ColorPicker";
+import { createEmptyGrid } from "./utils";
+import reducer from "./reducer";
+import * as actions from "./actions";
 
 function init() {
   return {
     grid: createEmptyGrid(),
     selectedColor: "black",
     brushSize: 1,
-    tool: "brush",
+    tool: "brush"
   };
 }
 
@@ -31,7 +31,9 @@ function App() {
       <label>
         Brush size&nbsp;
         <input
-          onChange={e => dispatch(actions.selectBrushSize(parseInt(e.target.value)))}
+          onChange={e =>
+            dispatch(actions.selectBrushSize(parseInt(e.target.value)))
+          }
           value={brushSize}
           type="number"
           min="1"
@@ -66,7 +68,7 @@ const styles = {
     flexDirection: "column",
     padding: 10,
     userSelect: "none"
-  },
+  }
 };
 
 export default App;

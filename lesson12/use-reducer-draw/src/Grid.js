@@ -1,5 +1,5 @@
-import React from 'react';
-import { WIDTH, HEIGHT } from './constants';
+import React from "react";
+import { WIDTH, HEIGHT } from "./constants";
 
 function Grid({ grid, onClickCell }) {
   function onMouseMove(e, idx) {
@@ -42,8 +42,7 @@ const styles = {
     borderTop: "1px solid black",
     borderLeft: "1px solid black",
     boxSizing: "border-box"
-  },
-
+  }
 };
 
 export default Grid;
