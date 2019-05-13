@@ -1,0 +1,13 @@
+html {
+  font-size: 150%;
+  font: Helvetica, sans-serif;
+}
+
+.radio-input ~ .inner-circle {
+  transition: transform 0.25s ease-out;
+  transform: scale(0);
+}
+
+.radio-input:checked ~ .inner-circle {
+  transform: scale(1);
+}
